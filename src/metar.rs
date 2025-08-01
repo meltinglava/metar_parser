@@ -79,7 +79,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_name() {
+    fn test_parse() {
         let input = std::fs::File::open("test.metars").unwrap();
         let metars = parse_metars(input).unwrap();
         assert!(metars.len() > 0);
